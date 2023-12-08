@@ -31,6 +31,7 @@ The video below is somewhat out of date as it:
 3. Install conda environment for FreeCAD
 
         cd FreeCAD
+        git submodule update --init
         conda env create -p .conda/freecad -f conda/conda-env.yaml
         conda config --add envs_dirs $CONDA_PREFIX/envs
         conda config --add envs_dirs $(pwd)/.conda
@@ -38,7 +39,7 @@ The video below is somewhat out of date as it:
         conda activate freecad
         conda devenv -f conda/environment.devenv.yml
 
-4. Open FreeCAD in VS Code
+5. Open FreeCAD in VS Code
 
         cd ..
         code FreeCAD
@@ -53,7 +54,7 @@ The video below is somewhat out of date as it:
 
     This should now configure CMake to build FreeCAD.
 
-5. Build FreeCAD
+6. Build FreeCAD
 
     Use the `F7` key or run the `CMake: Build` command
 
